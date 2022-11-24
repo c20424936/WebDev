@@ -12,14 +12,13 @@ const Header = (props) => {
                
     <div className='headlink'><Link to="/">Home</Link></div>
     </nav>
-    <div className='headlink'><Link to="/Favourites">Favourites</Link>
-      </div>
-      <nav>
+         <nav>
       <div className='headlink'><Link to="/AllBooks">All Books</Link>
       </div>   
         
       </nav>
-
+      <div className='headlink'><Link to="/UserList">List Users</Link>
+      </div>
       <div className='headlink'><Link to="/Login">Login</Link></div>
     </header>
     </div>

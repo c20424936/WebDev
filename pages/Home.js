@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 
 
-import Modal from "../components/modal";
+import Backbutton from "../components/modal";
 import Backdrop from "../components/Backdrop";
 import Header from '../components/header';
 import Footer from '../components/Footer';
@@ -34,73 +34,68 @@ const Home = () => {
 
       <MyCarousel/>
 
+      <h2>Our Suggestions:</h2>
       <div class="card">
-      <img width='150px'
-       height='200px'
-       src="../Caterpillar.jpeg" />
-
+      <img width='150px' height='200px' src="The-war-of-the-worlds.jpg"alt='COVER' />
         <div class="cardcontainer">
-          <button className="btn" onClick={MoreInfo}>Information</button>
+          <button className="newbtn" onClick={MoreInfo}>Information</button>
         </div>
       </div>
       
       <div class="card">
       <img width='150px' height='200px'
-       src="https://m.media-amazon.com/images/I/81R2N4PRuUL.jpg" />
-
-        <div class="cardcontainer">
-        <button className="btn" onClick={MoreInfo}>Information</button>
-        </div>
+       src="IT.jpg" alt="IT cover" />
+          <div class="cardcontainer">
+          <button className="newbtn" onClick={MoreInfo}>Information</button>
+          </div>
       </div>
 
 
       <div class="card">
       <img width='150px'
-       height='200px' src="https://m.media-amazon.com/images/I/81R2N4PRuUL.jpg" />
+       height='200px' src="Gatsby.jpg" alt='Great Gatsby' />
         <div class="cardcontainer">
-        <button className="btn" onClick={MoreInfo}>Information</button>
+        <button className="newbtn" onClick={MoreInfo}>Information</button>
         </div>
       </div>
 
       <div class="card">
-      <img width='150px'
-       height='200px' src="https://m.media-amazon.com/images/I/81R2N4PRuUL.jpg" />
-        <div class="cardcontainer">
-        <button className="btn" onClick={MoreInfo}>Information</button>
-        </div>
+        <img width='150px' height='200px' src="Pride+Pre.jpg" alt='Pride'/>
+          <div class="cardcontainer">
+            <button className="newbtn" onClick={MoreInfo}>Information</button>
+          </div>
       </div>
 
       <div class="card">
-      <img width='150px'
-       height='200px' src="https://m.media-amazon.com/images/I/81R2N4PRuUL.jpg" />
-        <div class="cardcontainer">
-        <button className="btn" onClick={MoreInfo}>Information</button>
-        </div>
-
-      </div><div class="card">
-      <img width='150px'
-       height='200px'src="https://m.media-amazon.com/images/I/81R2N4PRuUL.jpg" />
-        <div class="cardcontainer">
-        <button className="btn" onClick={MoreInfo}>Information</button>
-        </div>
-
-      </div><div class="card">
-      <img width='150px'
-       height='200px'
-       src="https://m.media-amazon.com/images/I/81R2N4PRuUL.jpg" />
-        <div class="cardcontainer">
-        <button className="btn" onClick={MoreInfo}>Information</button>
-        </div>
+        <img width='150px' height='200px' src="Harry_Potter_1.jpg" alt='The Catcher in the Rye Cover' />
+          <div class="cardcontainer">
+            <button className="newbtn" onClick={MoreInfo}>Information</button>
+          </div>
       </div>
 
+      <div class="card">
+        <img width='150px' height='200px' src="Harry_Potter_2.jpg"alt='The Catcher in the Rye Cover' />
+          <div class="cardcontainer">
+            <button className="newbtn" onClick={MoreInfo}>Information</button>
+          </div>
+      </div>
 
+      <div class="card">
+        <img width='150px' height='200px' src="Harry_Potter_3.jpg" alt='The Catcher in the Rye Cover' />
+          <div class="cardcontainer">
+            <button className="newbtn" onClick={MoreInfo}>Information</button>
+          </div>
+      </div>
+
+      
       {/*<div className="btn"><Link to="/Top10">Top 10 Books of the Week</Link></div>*/}
   
       
-      {Open && <Modal onClick={GoBack}/>}
+      {Open && <Backbutton onClick={GoBack}/>}
       {Open && <Backdrop onClick={GoBack}/>}
       
      </div>
+     
     
       <Footer/>
       </div>

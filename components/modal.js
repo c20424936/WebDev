@@ -1,12 +1,11 @@
 import React from 'react'
 
-const Modal = (props) => {
+const Backbutton = (props) => {
   return (
-    <div className='modal' onClick={props.onClick}>
-        
-        <button className='btn'>Go Back</button>
+    <div className='Backbutton' onClick={props.onClick}>
+        <button className='newbtn'>Go Back</button>
     </div>
   )
 }
 
-export default Modal;
+export default Backbutton;

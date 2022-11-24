@@ -6,7 +6,7 @@ import Sidenav from '../components/sidebar';
 
 const NewBooks = () => {
   return (
-    <div>
+    <div className='Home'>
         
       <Header/>
       <Sidenav/>
