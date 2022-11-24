@@ -20,12 +20,12 @@ const MyCarousel = () => {
           <div className="item">
 
             <div class="d-flex justify-content-center">
-              <Link to="/AllBooks"><img src="1984.jpg" alt="1984" height='345px' width='500px' margin='auto' /></Link>
+              <Link to="/AllBooks"><img src="1984.jpg" alt="1984 Cover" height='345px' width='500px' margin='auto' /></Link>
             </div></div>
 
           <div className="item">
             <div class="d-flex justify-content-center">
-              <Link to="/AllBooks"><img src="Diary-Of-A-Wimpy-Kid-Rodrick-Rules-Book-2.jpg" alt="Diary Cover" height='345px' margin-left='auto' /></Link>
+              <Link to="/AllBooks"><img src="The-Catcher-in-the-Rye.jpg" alt="Rye Cover" height='345px' margin-left='auto' /></Link>
             </div>
           </div>
         </div>

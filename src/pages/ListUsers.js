@@ -75,7 +75,9 @@ const UserList = () => {
           </tbody>
         </table>
       </div>
-    </div></>
+    </div>
+    <Footer/>
+    </>
   );
 };
  
