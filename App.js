@@ -8,6 +8,9 @@ import AllBooks from './pages/AllBooks';
 import Top10  from './pages/Top10';
 import Login from './pages/login';
 import NewBooks from './pages/Newbooks';
+import Register from './pages/Register';
+
+
 
 export default function App() {
   return (
@@ -20,6 +23,7 @@ export default function App() {
           <Route path="NewBooks" element={<NewBooks />} />{/* New Books Page */}
           <Route path='Top10' element={<Top10/>}/>{/* Top 10 Page */}
           <Route path='Login' element={<Login/>}/>{/*Login Page */}
+          <Route path='Register' element={<Register/>}/>{/*Login Page */}
 
         </Route>
       </Routes>

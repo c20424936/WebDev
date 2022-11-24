@@ -11,7 +11,7 @@ const NewBooks = () => {
       <Header/>
       <Sidenav/>
       <body>
-      <h1></h1>
+      <h1>New Books in Stock</h1>
       </body>
       <Footer/>
       </div>
