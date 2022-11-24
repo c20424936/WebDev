@@ -2,8 +2,7 @@
 import Header from '../components/header';
 import Footer from '../components/Footer';
 import Sidenav  from '../components/sidebar';
-import Backbutton from '../components/modal';
-import Backdrop from '../components/Backdrop';
+
 
 import React, { useState, useEffect } from "react";
 import axios from "axios";
@@ -34,19 +33,14 @@ const UserList = () => {
     <>
     <Header/>
     <Sidenav/>
+    <div className='Home'>
     <div className="columns mt-5">
       <div className="column is-half">
-        <Link to="add" className="button is-success">
-          Add New
-        </Link>
         <table className="table is-striped is-fullwidth mt-2">
           <thead>
             <tr>
-              <th>No</th>
               <th>Name</th>
               <th>Email</th>
-              <th>Gender</th>
-              <th>Actions</th>
             </tr>
           </thead>
           <tbody>
@@ -55,20 +49,16 @@ const UserList = () => {
                 <td>{index + 1}</td>
                 <td>{user.name}</td>
                 <td>{user.email}</td>
-                <td>{user.gender}</td>
+                
                 <td>
                   <Link
                     to={`edit/${user._id}`}
-                    className="button is-info is-small mr-1"
-                  >
-                    Edit
-                  </Link>
+                    className="subbtn"
+                  >Edit</Link>
                   <button
                     onClick={() => deleteUser(user._id)}
-                    className="button is-danger is-small"
-                  >
-                    Delete
-                  </button>
+                    className="newbtn">Delete </button>
+                  
                 </td>
               </tr>
             ))}
@@ -76,7 +66,9 @@ const UserList = () => {
         </table>
       </div>
     </div>
+    </div>
     <Footer/>
+   
     </>
   );
 };
