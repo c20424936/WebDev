@@ -1,6 +1,6 @@
 import React,{useState} from "react";
-import {Card, Col, Row, ListGroup} from 'react-bootstrap';
-
+import {Card,  Row, } from 'react-bootstrap';
+import {Link} from 'react-router-dom'
 
 
 import Backbutton from "../components/modal";
@@ -48,7 +48,7 @@ const Home = () => {
       </Card.Body>
     </Card>
 
-    
+
     <Card style={{ width: '150px', height:'280px',textAlign:'center' }}>
       <Card.Img width='150px' height='200px'  src="IT.jpg"alt='COVER'/>
       <Card.Body>
@@ -98,7 +98,6 @@ const Home = () => {
     </Card>
 </Row>
       
-      {/*<div className="btn"><Link to="/Top10">Top 10 Books of the Week</Link></div>*/}
   
       
       {Open && <Backbutton onClick={GoBack}/>}
