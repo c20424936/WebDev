@@ -3,7 +3,7 @@ import Footer from '../components/Footer';
 import Header from '../components/header';
 import Sidenav from '../components/sidebar';
 import Backbutton from '../components/modal';
-import Backdrop from '../components/Backdrop';
+import Back from '../components/Backdrop';
 
 
 const Top10 = () => {
@@ -39,7 +39,7 @@ const Top10 = () => {
 
      
       {Open && <Backbutton onClick={GoBack}/>}
-      {Open && <Backdrop onClick={GoBack}/>}
+      {Open && <Back onClick={GoBack}/>}
        
     </div>
   )

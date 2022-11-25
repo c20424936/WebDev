@@ -1,26 +1,31 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import UserList from "./components/UserList";
-import AddUser from "./components/AddUser";
-import EditUser from "./components/EditUser";
-import AddBook from "./components/AddBook";
-import BookList from "./components/BookList";
-import EditBook from "./components/EditBook";
- 
-function App() {
+import React from 'react';
+import { BrowserRouter, Routes, Route} from "react-router-dom";
+
+import Home from './pages/Home'
+
+import ListUsers from './pages/ListUsers';
+import AllBooks from './pages/AllBooks';
+import Top10  from './pages/Top10';
+import Login from './pages/login';
+import NewBooks from './pages/Newbooks';
+import Register from './pages/Register';
+
+
+export default function App() {
   return (
     <BrowserRouter>
-      <div className="container">
-        <Routes>
-          <Route path="/" element={<UserList />} />
-          <Route path="listbooks" element={<BookList />} />
-          <Route path="add" element={<AddUser />} />
-          <Route path="listbooks/add-book" element={<AddBook />} />
-          <Route path="edit/:id" element={<EditUser />} />
-          <Route path="listbooks/edit/:id" element={<EditBook />} />
-        </Routes>
-      </div>
+      <Routes>
+        <Route>
+          <Route index element={<Home />} /> {/* Main Page */}
+          <Route path="ListUsers" element={<ListUsers />} />{/* List of Users */}
+          <Route path="AllBooks" element={<AllBooks />} />{/* All Books*/}
+          <Route path="NewBooks" element={<NewBooks />} />{/* New Books Page */}
+          <Route path='Top10' element={<Top10/>}/>{/* Top 10 Page */}
+          <Route path='Login' element={<Login/>}/>{/*Login Page */}
+          <Route path='Register' element={<Register/>}/>{/*Register Page */}
+
+        </Route>
+      </Routes>
     </BrowserRouter>
   );
 }
- 
-export default App;

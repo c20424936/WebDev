@@ -8,7 +8,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
  
-const UserList = () => {
+const ListUsers = () => {
   const [users, setUser] = useState([]);
  
   useEffect(() => {
@@ -49,16 +49,9 @@ const UserList = () => {
                 <td>{index + 1}</td>
                 <td>{user.name}</td>
                 <td>{user.email}</td>
-                
                 <td>
-                  <Link
-                    to={`edit/${user._id}`}
-                    className="subbtn"
-                  >Edit</Link>
-                  <button
-                    onClick={() => deleteUser(user._id)}
-                    className="newbtn">Delete </button>
-                  
+                  <Link to={`edit/${user._id}`} className="subbtn">Edit</Link>
+                  <button onClick={() => deleteUser(user._id)} className="newbtn">Delete </button> 
                 </td>
               </tr>
             ))}
@@ -73,4 +66,4 @@ const UserList = () => {
   );
 };
  
-export default UserList;
+export default ListUsers;
