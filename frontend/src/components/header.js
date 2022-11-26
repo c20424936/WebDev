@@ -16,7 +16,7 @@ function Header() {
             </Nav>
            
             <Nav className="headlink" fixed="top">
-            <Nav.Link href="/UserList">List All Users</Nav.Link>
+            <Nav.Link href="/UserList">Users</Nav.Link>
             </Nav>
 
             <Nav className="headlink" fixed="top">
