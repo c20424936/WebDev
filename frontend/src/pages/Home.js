@@ -1,6 +1,6 @@
 import React,{useState} from "react";
 import {Card,  Row, } from 'react-bootstrap';
-import {Link} from 'react-router-dom'
+
 
 
 import Backbutton from "../components/modal";

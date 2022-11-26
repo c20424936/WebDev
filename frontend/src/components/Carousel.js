@@ -34,9 +34,6 @@ function MyCarousel() {
           width='275px'
         
         />
-
-        <Carousel.Caption>
-        </Carousel.Caption>
       </Carousel.Item>
     </Carousel></Link>
   );
