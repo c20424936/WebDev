@@ -34,16 +34,6 @@ body {
   
 }
 
-.subbtn {
-  font: inherit;
-  padding: 5px 15px;
-  cursor: pointer;
-  border-radius: 5px;
-  background-color: rgb(48, 246, 48);
-  border: 5px solid black;
-  
-}
-
 
 .Backbutton {
   box-shadow: 0 1px 4px red;
@@ -60,7 +50,7 @@ body {
 
 .Back {
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   background-color: rgba(0, 0, 0, 0.75);
   width: 100%;
   height:100%;
