@@ -23,8 +23,8 @@ function Header() {
        
             <NavDropdown title="Books" id="basic-nav-dropdown">
               
-            <Nav className="headlink"><NavDropdown.Item href="/AllBooks">All Books</NavDropdown.Item></Nav>
-            <Nav className="headlink"><NavDropdown.Item href="/Top10">Top 10 Books of the week</NavDropdown.Item></Nav>
+            <Nav className="form"><NavDropdown.Item href="/AllBooks">All Books</NavDropdown.Item></Nav>
+            <Nav className="form"><NavDropdown.Item href="/Top10">Top 10 Books of the week</NavDropdown.Item></Nav>
               <NavDropdown.Divider />
             </NavDropdown>
             </Nav>

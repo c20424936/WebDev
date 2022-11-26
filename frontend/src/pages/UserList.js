@@ -35,7 +35,7 @@ import Sidenav from "../components/sidebar";
     <div className="columns mt-5">
       <div className="column is-half">
       <div className="Home">
-        <h1>Users:</h1>
+        <h1>Users:</h1><br/>
         <Link to="add" className="newbtn">
           Add New
         </Link>

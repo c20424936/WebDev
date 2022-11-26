@@ -10,7 +10,7 @@ import Form from 'react-bootstrap/Form';
 
 function Login() {
 
-    
+
       return (
         <>
         <Header/>
@@ -27,9 +27,7 @@ function Login() {
         <Form.Label>Password</Form.Label>
         <Form.Control type="password" placeholder="Password" />
       </Form.Group>
-      <Button variant="primary" type="submit">
-        Submit
-      </Button>
+      <Link to="/"><Button variant="primary" type="submit">Submit</Button></Link>
    <br/>
    <br/>
           <label>Not Registered? </label>
