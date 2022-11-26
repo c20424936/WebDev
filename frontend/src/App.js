@@ -32,7 +32,7 @@ export default function App() {
           <Route path="listbooks" element={<BookList />} />
           <Route path="UserList/add" element={<AddUser />} />
           <Route path="listbooks/add-book" element={<AddBook />} />
-          <Route path="edit/:id" element={<EditUser />} />
+          <Route path="UserList/edit/:id" element={<EditUser />} />
           <Route path="listbooks/edit/:id" element={<EditBook />} />
 
         </Route>

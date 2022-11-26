@@ -34,6 +34,7 @@ const BookList = () => {
     <div className="columns mt-5">
       <div className="column is-half">
       <div className="Home">
+      <h1>Books:</h1>
         <Link to="/UserList" className="newbtn">
           User list
         </Link>

@@ -6,20 +6,20 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 function Header() {
   return (
    
-      <Navbar className='header'>
+      <Navbar className='header' fixed="top">
         <Navbar.Brand href="/"><h1>M&B Bookshop</h1></Navbar.Brand>
         <Navbar.Brand> </Navbar.Brand>
           <Navbar.Brand> </Navbar.Brand>
         
-          <Nav className="headlink">
+          <Nav className="headlink" fixed="top">
           <Nav.Link href="/"> Home</Nav.Link>
             </Nav>
            
-            <Nav className="headlink">
-            <Nav.Link href="/listbooks">List All Users</Nav.Link>
+            <Nav className="headlink" fixed="top">
+            <Nav.Link href="/UserList">List All Users</Nav.Link>
             </Nav>
 
-            <Nav className="headlink">
+            <Nav className="headlink" fixed="top">
        
             <NavDropdown title="Books" id="basic-nav-dropdown">
               

@@ -24,6 +24,7 @@ const AllBooks = () => {
       <Header/>
       <Sidenav/>
       <div className='Home'>
+       <h1>  All Books:</h1>
       <Row xs={1} md={4} className="g-4 carousel">
       
       <Card style={{ width: '150px', height:'280px',textAlign:'center' }}>
@@ -64,7 +65,7 @@ const AllBooks = () => {
     <Card style={{ width: '150px', height:'280px',textAlign:'center' }}>
       <Card.Img width='150px' height='200px'  src=" Harry_Potter_1.jpg"alt='COVER'/>
       <Card.Body>
-        <Card.Title>Harry Potter</Card.Title>
+        <Card.Title>Harry Potter 1</Card.Title>
         <button className="newbtn" onClick={MoreInfo}>Information</button>
       </Card.Body>
     </Card>
@@ -72,14 +73,14 @@ const AllBooks = () => {
     <Card style={{ width: '150px', height:'280px',textAlign:'center' }}>
       <Card.Img width='150px' height='200px'  src=" Harry_Potter_2.jpg"alt='COVER'/>
       <Card.Body>
-        <Card.Title>Harry Potter</Card.Title>
+        <Card.Title>Harry Potter 2</Card.Title>
         <button className="newbtn" onClick={MoreInfo}>Information</button>
       </Card.Body>
     
     </Card> <Card style={{ width: '150px', height:'280px', textAlign:'center' }}>
       <Card.Img width='150px' height='200px'  src=" Harry_Potter_3.jpg"alt='COVER'/>
       <Card.Body>
-        <Card.Title>Harry Potter</Card.Title>
+        <Card.Title>Harry Potter 3</Card.Title>
         <button className="newbtn" onClick={MoreInfo}>Information</button>
       </Card.Body>
     </Card>
@@ -87,7 +88,7 @@ const AllBooks = () => {
     <Card style={{ width: '150px', height:'280px',textAlign:'center' }}>
       <Card.Img width='150px' height='200px'  src=" Harry_Potter_4.jpg"alt='COVER'/>
       <Card.Body>
-        <Card.Title>Harry Potter</Card.Title>
+        <Card.Title>Harry Potter 4</Card.Title>
         <button className="newbtn" onClick={MoreInfo}>Information</button>
       </Card.Body>
     </Card>
@@ -95,7 +96,7 @@ const AllBooks = () => {
     <Card style={{ width: '150px', height:'280px',textAlign:'center' }}>
       <Card.Img width='150px' height='200px'  src=" Harry_Potter_5.jpg"alt='COVER'/>
       <Card.Body>
-        <Card.Title>Harry Potter</Card.Title>
+        <Card.Title>Harry Potter 5</Card.Title>
         <button className="newbtn" onClick={MoreInfo}>Information</button>
       </Card.Body>
     </Card> 
@@ -103,7 +104,7 @@ const AllBooks = () => {
     <Card style={{ width: '150px', height:'280px', textAlign:'center' }}>
       <Card.Img width='150px' height='200px'  src=" Harry_Potter_6.jpg"alt='COVER'/>
       <Card.Body>
-        <Card.Title>Harry Potter</Card.Title>
+        <Card.Title>Harry Potter 6</Card.Title>
         <button className="newbtn" onClick={MoreInfo}>Information</button>
       </Card.Body>
     </Card>
@@ -111,7 +112,7 @@ const AllBooks = () => {
   <Card style={{ width: '150px', height:'280px', textAlign:'center' }}>
         <Card.Img width='150px' height='200px'  src=" Harry_Potter_7.jpg"alt='COVER'/>
         <Card.Body>
-          <Card.Title>Harry Potter</Card.Title>
+          <Card.Title>Harry Potter 7</Card.Title>
           <button className="newbtn" onClick={MoreInfo}>Information</button>
         </Card.Body>
       </Card>
@@ -119,7 +120,7 @@ const AllBooks = () => {
     <Card style={{ width: '150px', height:'280px',textAlign:'center' }}>
       <Card.Img width='150px' height='200px'  src=" Shingeki_no_Kyojin_manga_volume_1.jpg"alt='COVER'/>
       <Card.Body>
-        <Card.Title>Harry Potter</Card.Title>
+        <Card.Title>Attack on Titan Vol.1</Card.Title>
         <button className="newbtn" onClick={MoreInfo}>Information</button>
       </Card.Body>
     </Card>
@@ -127,14 +128,14 @@ const AllBooks = () => {
     <Card style={{ width: '150px', height:'280px',textAlign:'center' }}>
       <Card.Img width='150px' height='200px'  src=" attack-on-titan-34.jpg"alt='COVER'/>
       <Card.Body>
-        <Card.Title>Harry Potter</Card.Title>
+        <Card.Title>Attack on Titan Vol.34</Card.Title>
         <button className="newbtn" onClick={MoreInfo}>Information</button>
       </Card.Body>
     
     </Card> <Card style={{ width: '150px', height:'280px', textAlign:'center' }}>
       <Card.Img width='150px' height='200px'  src=" chainsaw-man-vol-1.jpg"alt='COVER'/>
       <Card.Body>
-        <Card.Title>Harry Potter</Card.Title>
+        <Card.Title>Chainsaw man vol 1</Card.Title>
         <button className="newbtn" onClick={MoreInfo}>Information</button>
       </Card.Body>
     </Card>
@@ -142,7 +143,7 @@ const AllBooks = () => {
       <Card style={{ width: '150px', height:'280px', textAlign:'center' }}>
       <Card.Img width='150px' height='200px'  src=" Caterpillar.jpeg"alt='COVER'/>
       <Card.Body>
-        <Card.Title>Harry Potter</Card.Title>
+        <Card.Title>The Hungry Caterpillar</Card.Title>
         <button className="newbtn" onClick={MoreInfo}>Information</button>
       </Card.Body>
     </Card>
@@ -150,7 +151,7 @@ const AllBooks = () => {
       <Card style={{ width: '150px', height:'280px', textAlign:'center' }}>
       <Card.Img width='150px' height='200px'  src=" fullmetal-alchemist-vol-1.jpg"alt='COVER'/>
       <Card.Body>
-        <Card.Title>Harry Potter</Card.Title>
+        <Card.Title>Fullmetal Alchemist vol 1</Card.Title>
         <button className="newbtn" onClick={MoreInfo}>Information</button>
       </Card.Body>
     </Card>

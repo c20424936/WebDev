@@ -54,13 +54,13 @@ const UserList = () => {
                 <td>
                   <Link
                     to={`edit/${user._id}`}
-                    className="button is-info is-small mr-1"
+                    className="newbtn"
                   >
                     Edit
                   </Link>
                   <button
                     onClick={() => deleteUser(user._id)}
-                    className="button is-danger is-small"
+                    className="newbtn"
                   >
                     Delete
                   </button>

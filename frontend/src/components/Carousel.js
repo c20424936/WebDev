@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import Carousel from 'react-bootstrap/Carousel';
 
 
-import 'bootstrap/dist/css/bootstrap.min.css'
 
 
 function MyCarousel() {
@@ -13,7 +12,7 @@ function MyCarousel() {
         <img
           className="d-block mx-auto "
           src="Caterpillar.jpeg" alt="Hungry Hungry Caterpillar" height='300px' 
-          width='275px'
+          
         
         />
       
@@ -22,7 +21,7 @@ function MyCarousel() {
         <img
           className="d-block mx-auto"
           src="The-Catcher-in-the-Rye.jpg" alt="Rye Cover" height='300px' 
-          width='275px'
+        
         />
 
        
@@ -31,7 +30,7 @@ function MyCarousel() {
         <img
           className="d-block mx-auto"
           src="1984.jpg" alt="1984 Cover" height='300px' 
-          width='275px'
+          s
         
         />
       </Carousel.Item>

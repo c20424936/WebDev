@@ -50,7 +50,7 @@ const EditUser = () => {
     <Sidenav/>
     
     <div className="columns mt-5">
-      <div className="column is-half">
+      <div className="form">
       <div className="Home">
         <form onSubmit={updateUser}>
           <div className="field">

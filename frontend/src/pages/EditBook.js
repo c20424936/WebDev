@@ -50,7 +50,7 @@ const EditBook = () => {
     <Sidenav/>
     
     <div className="columns mt-5">
-      <div className="column is-half">
+      <div className="form">
       <div className="Home">
         <form onSubmit={updateBook}>
         <div className="field">
