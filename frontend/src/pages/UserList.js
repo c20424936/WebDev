@@ -36,12 +36,14 @@ import Sidenav from "../components/sidebar";
       <div className="column is-half">
       <div className="Home">
         <h1>Users:</h1><br/>
-        <Link to="add" className="newbtn">
-          Add New
-        </Link>
+        
         <Link to="/listbooks" className="newbtn">
           Book list
         </Link>
+        <Link to="add" className="newbtn">
+          Add New
+        </Link>
+
         <table className="table is-striped is-fullwidth mt-2">
           <thead>
             <tr>
