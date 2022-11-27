@@ -2,6 +2,8 @@
 By Mark Clancy Sutton and Ben Connell
 
 <h1>Front-end by Ben </h1>
+The front-end is derived of 2 folders, pages and components. The pages contain the components such as the header or sidebar.
+ The main page of the site is the home.js file. This file displays the carousel component created in the Carousel.js file. It also has a row of cards that are linked to the AllBooks.js page. This page is then surrounded by the footer.js component, the header.js file and the sidebar.js file. These are all imported and implemented across all pages as they all contain links around the site.
 
 <h1>Back-end by Mark </h1>
 In the backend is is all controlled by server.js which uses the functions and methods exporeted from the other .js files to connect to the mongodb server using the connection string and set it up to listen in on port 5000. The usermodel and bookmodel both crete the scheama that the database collection of users and books will be based off of and then export those to their repective controllers to allow them to do CRUD.In the controller folder both usercontroller and bookcontroller have created the functions to do CRUD on the 2 database collections books and users and export those functions to bookroutes and user routes. In the routes file for both of these collections is where the link between the front and back end is created by using the in built function of express.Router() to set up the get,post,patch and delete routes that we need when they are called in the front end to then start the function that they are linked with from the controller files. This will then allow the user form the front-end to access the datavabse in a limited settting to complete CRUD oeprations. 
