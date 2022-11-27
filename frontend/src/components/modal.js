@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 const Backbutton = (props) => {
   return (
     <div className='Backbutton' onClick={props.onClick}>
-        <Link to='/listbooks'><button className='newbtn'>More Info</button></Link>
+        <Link to='Plistbooks'><button className='newbtn'>More Info</button></Link>
     </div>
   )
 }

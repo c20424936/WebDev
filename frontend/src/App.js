@@ -14,6 +14,7 @@ import AddUser from "./pages/AddUser";
 import EditUser from "./pages/EditUser";
 import AddBook from "./pages/AddBook";
 import BookList from "./pages/BookList";
+import PBookList from "./pages/PBooklist"
 import EditBook from "./pages/EditBook";
 
 
@@ -34,6 +35,7 @@ export default function App() {
 
           <Route path="UserList" element={<UserList />} />
           <Route path="listbooks" element={<BookList />} />
+          <Route path="Plistbooks" element={<PBookList />} />
           <Route path="UserList/add" element={<AddUser />} />
           <Route path="listbooks/add-book" element={<AddBook />} />
           <Route path="UserList/edit/:id" element={<EditUser />} />
