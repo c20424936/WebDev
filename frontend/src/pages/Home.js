@@ -1,5 +1,5 @@
 import React,{useState} from "react";
-import {Card,  Row } from 'react-bootstrap';
+import {Card,  Row, } from 'react-bootstrap';
 
 
 
@@ -38,7 +38,7 @@ const Home = () => {
 
 
       <h2>Our Suggestions:</h2>
-      <Row xs={1} md={4} className="g-4">
+      <Row xs={1} md={4} className="g-4 carousel">
          
       <Card style={{ width: '150px', height:'280px',textAlign:'center' }}>
       <Card.Img width='150px' height='200px'  src="The-war-of-the-worlds.jpg"alt='COVER'/>

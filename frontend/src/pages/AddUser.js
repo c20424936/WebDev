@@ -21,7 +21,7 @@ const AddUser = () => {
         gender,
         pass,
       });
-      navigate("/ListUser");
+      navigate("/UserList");
     } catch (error) {
       console.log(error);
     }

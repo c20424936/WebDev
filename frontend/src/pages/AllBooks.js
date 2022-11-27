@@ -5,6 +5,8 @@ import Sidenav from '../components/sidebar';
 import Backbutton from '../components/modal';
 import Back from '../components/Backdrop';
 import {Card,Row} from 'react-bootstrap'
+
+
   
 const AllBooks = () => {
 
@@ -18,8 +20,10 @@ const AllBooks = () => {
   function GoBack() {
     setOpen(false);
   }
-
-  return (
+ 
+return (
+   
+      
     <div>
       <Header/>
       <Sidenav/>
@@ -175,7 +179,11 @@ const AllBooks = () => {
       {Open && <Back onClick={GoBack}/>}
        
     </div>
+    
   )
+
+ 
 }
  
 export default AllBooks; 
+//in /page

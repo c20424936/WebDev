@@ -1,42 +1,96 @@
-import React from 'react';
+import React, { useState } from "react";
 import Footer from '../components/Footer';
 import Header from '../components/header';
 import Sidenav from '../components/sidebar';
 import { Link } from "react-router-dom";
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 
 
 function Login() {
+  const [email, setEmail] = useState("");
+  const [pass,setPassword]= useState("");
+  const navigate = useNavigate();
+ 
+  const [authenticated, setauthenticated] = useState(localStorage.getItem(localStorage.getItem("authenticated")|| false));
+const users = [{ email: "admin@gmail.com", pass: "admin12" }];
+ 
+  const loginUser = async (e) => {
+    e.preventDefault();
+    try {
+      await axios.post("http://localhost:5000/login", {
+        email,
+        pass,
+      });
+      const account = users.find((user) => user.email === email);
+      if (account && account.pass === pass) {
+      setauthenticated(true)
+      localStorage.setItem("authenticated", true);
+      navigate("/UserList");
+      } 
+      
+      
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
 
       return (
         <>
         <Header/>
         <Sidenav/>
-        <div className='form'>
-      <Form>
-      <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Label>Email address</Form.Label>
-        <Form.Control type="email" placeholder="Enter email" />
-      </Form.Group>
-
-      <Form.Group className="mb-3" controlId="formBasicPassword">
-        <Form.Label>Password</Form.Label>
-        <Form.Control type="password" placeholder="Password" />
-      </Form.Group>
-      <Link to="/"><Button variant="primary" type="submit">Submit</Button></Link>
-   <br/>
-   <br/>
-          <label>Not Registered? </label>
-          <Link to="/Register"><h3>Register Here!</h3></Link>
-        </Form>
-        </div>
-        
-        <Footer/>
-        </>
-      )
-}
+        <div className="columns mt-5">
+      <div className="column is-half">
+      <div className="Home">
+      <div className="form">
+        <form onSubmit={loginUser}>
+          <div className="field">
+            <label className="label">Email</label>
+            <div className="control">
+              <input
+                type="text"
+                className="input"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder="Email"
+              />
+            </div>
+          </div>
+          <div className="field">
+            <label className="label">Pass</label>
+            <div className="control">
+              <input
+                type="text"
+                className="input"
+                value={pass}
+                onChange={(e) => setPassword(e.target.value)}
+                placeholder="Password"
+              />
+            </div>
+          </div>
+          <br/>
+          <div className="field">
+            <div className="control">
+              <button type="submit" className="newbtn">
+                Save
+              </button>
+            </div>
+          </div>
+        </form>
+        <Link to="/Register" className="newbtn">
+          Register
+        </Link>
+       </div>
+      </div>
+    </div>
+    <Footer/>
+    </div>
+    </>
+  );
+};
 
 export default Login;

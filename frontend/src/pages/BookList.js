@@ -5,6 +5,7 @@ import Header from "../components/header";
 import Sidenav from "../components/sidebar";
 import Footer from "../components/Footer";
 
+
 const BookList = () => {
   const [books, setBook] = useState([]);
  
@@ -25,6 +26,17 @@ const BookList = () => {
       console.log(error);
     }
   };
+
+  const pushbook = async () =>{
+    books.map((book, index) => (
+      <Link
+  to={{
+    pathname: "/allBooks",
+    data: book // your data array of objects
+  }}
+></Link>))
+  }
+
  
   return (
     <>
@@ -64,6 +76,12 @@ const BookList = () => {
                 <td>{book.price}</td>
                 <td>{book.photo}</td>
                 <td>
+                <button
+                    onClick={() => pushbook()}
+                    className="button is-danger is-small"
+                  >
+                    Push book
+                  </button>
                   <Link
                     to={`edit/${book._id}`}
                     className="button is-info is-small mr-1"
@@ -86,7 +104,9 @@ const BookList = () => {
     <Footer/>
     </div>
     </>
+    
   );
+  
 };
  
 export default BookList;

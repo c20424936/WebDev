@@ -3,11 +3,11 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
-const Header = (props) => {
+function Header() {
   return (
    
       <Navbar className='header' fixed="top">
-        <Navbar.Brand href="/"><h1>{props.title}</h1></Navbar.Brand>
+        <Navbar.Brand href="/"><h1>M&B Bookshop</h1></Navbar.Brand>
         <Navbar.Brand> </Navbar.Brand>
           <Navbar.Brand> </Navbar.Brand>
         
@@ -15,9 +15,7 @@ const Header = (props) => {
           <Nav.Link href="/"> Home</Nav.Link>
             </Nav>
            
-            <Nav className="headlink" fixed="top">
-            <Nav.Link href="/UserList">Users</Nav.Link>
-            </Nav>
+            
 
             <Nav className="headlink" fixed="top">
        
