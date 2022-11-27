@@ -6,6 +6,7 @@ import Header from "../components/header";
 import Sidenav from "../components/sidebar";
  
 const AddBook = () => {
+  //Instanciate the variables 
   const [title, setTitle] = useState("");
   const [author, setAuthor] = useState("");
   const [quantity,setQuantity]= useState("");
@@ -13,9 +14,11 @@ const AddBook = () => {
   const [photo,setPhoto] = useState("");
   const navigate = useNavigate();
  
+  //Post the info from the form to the backend usin axios
   const saveBook = async (e) => {
     e.preventDefault();
     try {
+      //Post the values to the backend 
       await axios.post("http://localhost:5000/books", {
         title,
         author,
@@ -23,6 +26,7 @@ const AddBook = () => {
         price,
         photo
       });
+      //Send you back to the booklist page
       navigate("/listbooks");
     } catch (error) {
       console.log(error);

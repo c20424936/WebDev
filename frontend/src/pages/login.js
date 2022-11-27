@@ -15,7 +15,7 @@ function Login() {
   const [pass,setPassword]= useState("");
   const navigate = useNavigate();
   
-  //Create the variable to authenticate and see if it already exists 
+  //Create the variable to authenticate and see if it already exists and if not set it to false
   const [authenticated, setauthenticated] = useState(localStorage.getItem(localStorage.getItem("authenticated")|| false));
   const users = [{ email: "admin@gmail.com", pass: "admin12" }];
  
@@ -31,9 +31,11 @@ function Login() {
       setauthenticated(true)
       localStorage.setItem("authenticated", true);
       navigate("/UserList");
-      } 
+      }else{
+        navigate("/");
+      }
       
-      
+     
     } catch (error) {
       console.log(error);
     }
