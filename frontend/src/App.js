@@ -36,6 +36,7 @@ export default function App() {
           <Route path="UserList" element={<UserList />} />
           <Route path="listbooks" element={<BookList />} />
           <Route path="Plistbooks" element={<PBookList />} />
+          <Route path="/AllBooks/Plistbooks" element={<PBookList />} />
           <Route path="UserList/add" element={<AddUser />} />
           <Route path="listbooks/add-book" element={<AddBook />} />
           <Route path="UserList/edit/:id" element={<EditUser />} />
