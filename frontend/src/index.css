@@ -99,7 +99,7 @@ body {
 /* The sidebar menu */
 .sidenav {
   height: 100%; /* Full-height*/
-  width: 150px; /* Set the width of the sidebar */
+  width: 100px; /* Set the width of the sidebar */
   position: fixed; /* Fixed Sidebar*/
   background-color: #00ffff;
   color: #000;
