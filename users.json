@@ -1,0 +1,63 @@
+[{
+  "_id": {
+    "$oid": "63834bbe277c24262eef0bc3"
+  },
+  "name": "mark",
+  "email": "mark@gmail.com",
+  "gender": "Male",
+  "pass": "password1",
+  "photo": "https://static.xx.fbcdn.net/assets/?revision=816167972411634&name=desktop-workplace-your-profile-icon&density=1",
+  "phone": "+353",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1669548990803"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1669548990803"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6383500c4611e7c6e8354a83"
+  },
+  "name": "Admin",
+  "email": "admin@gmail.com",
+  "gender": "Male",
+  "pass": "admin12",
+  "photo": "https://static.xx.fbcdn.net/assets/?revision=816167972411634&name=desktop-workplace-your-profile-icon&density=1",
+  "phone": "+353",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1669550092584"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1669572736128"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "638369651a599072cf4c1fd8"
+  },
+  "name": "mark",
+  "email": "m@gmail.com",
+  "gender": "Male",
+  "pass": "password",
+  "photo": "https://static.xx.fbcdn.net/assets/?revision=816167972411634&name=desktop-workplace-your-profile-icon&density=1",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1669556581946"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1669556581946"
+    }
+  },
+  "__v": 0
+}]

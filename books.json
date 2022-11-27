@@ -1,0 +1,171 @@
+[{
+  "_id": {
+    "$oid": "63822b7f9cb2b0d56e66d360"
+  },
+  "title": "War of the Worlds",
+  "author": " H. G. Wells",
+  "quantity": 10,
+  "price": "£2",
+  "photo": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63822bb59cb2b0d56e66d366"
+  },
+  "title": "It",
+  "author": "Stephen King",
+  "quantity": 5,
+  "price": "£8",
+  "photo": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63822bdf9cb2b0d56e66d369"
+  },
+  "title": "The Great Gatsby",
+  "author": "F-Scott Fitzgerald",
+  "quantity": 5,
+  "price": "£6",
+  "photo": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63822c269cb2b0d56e66d36c"
+  },
+  "title": "Pride and Prejudice",
+  "author": "Jane Austen",
+  "quantity": 2,
+  "price": "£4",
+  "photo": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63822c729cb2b0d56e66d36f"
+  },
+  "title": "Harry Potter and the Philosopher Stone",
+  "author": "J.K. Rowling",
+  "quantity": 1,
+  "price": "£0.5",
+  "photo": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63822c969cb2b0d56e66d372"
+  },
+  "title": "Harry Potter and the Chamber of Secrets",
+  "author": "J.K Rowling",
+  "quantity": 2,
+  "price": "£1",
+  "photo": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63822cc79cb2b0d56e66d375"
+  },
+  "title": "Harry Potter and the Prisoner of Azkaban",
+  "author": "J.K Rowling",
+  "quantity": 2,
+  "price": "£2",
+  "photo": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63822d049cb2b0d56e66d378"
+  },
+  "title": "Harry Potter and the Goblet of Fire",
+  "author": "J.K Rowling",
+  "quantity": 3,
+  "price": "£2",
+  "photo": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63822d2e9cb2b0d56e66d37b"
+  },
+  "title": "Harry Potter and the Order of the Phoenix",
+  "author": "J.K Rowling",
+  "quantity": 2,
+  "price": "£1",
+  "photo": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63822d5f9cb2b0d56e66d37e"
+  },
+  "title": "Harry Potter and the Half-Blood Prince",
+  "author": "J.K Rowling",
+  "quantity": 3,
+  "price": "£4",
+  "photo": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63822d839cb2b0d56e66d381"
+  },
+  "title": "Harry Potter and the Deathly Hallows",
+  "author": "J.K Rowling",
+  "quantity": 20,
+  "price": "£4",
+  "photo": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63822d8d9cb2b0d56e66d384"
+  },
+  "title": "Attack on Titan vol:1",
+  "author": "Hajime Isayama",
+  "quantity": 12,
+  "price": "£10",
+  "photo": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63822ddb9cb2b0d56e66d38a"
+  },
+  "title": "Attack on Titan vol:34",
+  "author": "Hajime Isayama",
+  "quantity": 2,
+  "price": "£14",
+  "photo": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63822e119cb2b0d56e66d38d"
+  },
+  "title": "Chainsaw Man vol:1",
+  "author": "Tatsuki Fujimoto",
+  "quantity": 2,
+  "price": "£10",
+  "photo": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63822e3b9cb2b0d56e66d390"
+  },
+  "title": "The Hungry Catapillar ",
+  "author": "Eric carle",
+  "quantity": 20,
+  "price": "£5",
+  "photo": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63822e5f9cb2b0d56e66d393"
+  },
+  "title": "Fullmetal Alchemist vol:1",
+  "author": "Hiromu Arakawa",
+  "quantity": 2,
+  "price": "£7",
+  "photo": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63822e799cb2b0d56e66d396"
+  },
+  "title": "1984",
+  "author": "George Orwell",
+  "quantity": 2,
+  "price": "£4",
+  "photo": "",
+  "__v": 0
+}]
