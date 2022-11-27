@@ -6,7 +6,7 @@ import Sidenav from "../components/sidebar";
 import Footer from "../components/Footer";
 
 
-const BookList = () => {
+const PBookList = () => {
   const [books, setBook] = useState([]);
  
   useEffect(() => {
@@ -18,14 +18,7 @@ const BookList = () => {
     setBook(response.data);
   };
  
-  const deleteBook = async (id) => {
-    try {
-      await axios.delete(`http://localhost:5000/books/${id}`);
-      getBooks();
-    } catch (error) {
-      console.log(error);
-    }
-  };
+  
 
   const pushbook = async () =>{
     books.map((book, index) => (
@@ -48,12 +41,7 @@ const BookList = () => {
       <div className="Home">
       <h1>Books:</h1>
       <br/>
-        <Link to="/UserList" className="newbtn">
-          User list
-        </Link>
-        <Link to="add-book" className="newbtn">
-          Add New book
-        </Link>
+        
         <table className="table is-striped is-fullwidth mt-2">
           <thead>
             <tr>
@@ -63,7 +51,7 @@ const BookList = () => {
               <th>quantity</th>
               <th>price</th>
               <th>photo</th>
-              <th>Actions</th>
+            
             </tr>
           </thead>
           <tbody>
@@ -76,19 +64,8 @@ const BookList = () => {
                 <td>{book.price}</td>
                 <td>{book.photo}</td>
                 <td>
-                
-                  <Link
-                    to={`edit/${book._id}`}
-                    className="button is-info is-small mr-1"
-                  >
-                    Edit
-                  </Link>
-                  <button
-                    onClick={() => deleteBook(book._id)}
-                    className="button is-danger is-small"
-                  >
-                    Delete
-                  </button>
+               
+                  
                 </td>
               </tr>
             ))}
@@ -104,4 +81,4 @@ const BookList = () => {
   
 };
  
-export default BookList;
+export default PBookList;

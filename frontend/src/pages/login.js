@@ -14,9 +14,10 @@ function Login() {
   const [email, setEmail] = useState("");
   const [pass,setPassword]= useState("");
   const navigate = useNavigate();
- 
+  
+  //Create the variable to authenticate and see if it already exists 
   const [authenticated, setauthenticated] = useState(localStorage.getItem(localStorage.getItem("authenticated")|| false));
-const users = [{ email: "admin@gmail.com", pass: "admin12" }];
+  const users = [{ email: "admin@gmail.com", pass: "admin12" }];
  
   const loginUser = async (e) => {
     e.preventDefault();
