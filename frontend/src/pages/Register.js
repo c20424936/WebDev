@@ -19,8 +19,7 @@ const Register = () => {
 <>
     <Header/>
     <Sidenav/>
-        <body>
-        <div className='Home'>
+       
         <div className='form'>
         <Form>
         <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -47,8 +46,7 @@ const Register = () => {
 
       </Form>
         </div>
-        </div>
-        </body>
+       
         <Footer/>
         </>
   )

@@ -15,7 +15,6 @@ function Login() {
         <>
         <Header/>
         <Sidenav/>
-        <div className='Home'>
         <div className='form'>
       <Form>
       <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -34,7 +33,7 @@ function Login() {
           <Link to="/Register"><h3>Register Here!</h3></Link>
         </Form>
         </div>
-        </div>
+        
         <Footer/>
         </>
       )
