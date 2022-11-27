@@ -2,7 +2,7 @@ import React,{useState} from 'react'
 import Footer from '../components/Footer';
 import Header from '../components/header';
 import Sidenav from '../components/sidebar';
-import Backbutton from '../components/modal';
+import Backbutton from '../components/button';
 import Back from '../components/Backdrop';
 import { Card, Row } from 'react-bootstrap';
 

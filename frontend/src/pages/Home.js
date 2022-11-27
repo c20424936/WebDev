@@ -3,7 +3,7 @@ import {Card,  Row, } from 'react-bootstrap';
 
 
 
-import Backbutton from "../components/modal";
+import Backbutton from "../components/button";
 import Back from "../components/Backdrop";
 import Header from '../components/header';
 import Footer from '../components/Footer';
@@ -31,15 +31,17 @@ const Home = () => {
       <Sidenav/>
       
       <div className="Home">
-
+      {/*Calling the carousel*/}
       <MyCarousel/>
 
 
 
 
       <h2>Our Suggestions:</h2>
+      {/*Row Set Up*/}
       <Row xs={1} md={4} className="g-4 carousel">
-         
+      
+      {/*Cards*/}
       <Card style={{ width: '150px', height:'280px',textAlign:'center' }}>
       <Card.Img width='150px' height='200px'  src="The-war-of-the-worlds.jpg"alt='COVER'/>
       <Card.Body>
@@ -99,7 +101,7 @@ const Home = () => {
 </Row>
       
   
-      
+      {/*Display more info button + backgroud using UseState funtions*/}    
       {Open && <Backbutton onClick={GoBack}/>}
       {Open && <Back onClick={GoBack}/>}
       
