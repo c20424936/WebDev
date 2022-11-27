@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-
+//Creates the user scheama for the database
 const userSchema = mongoose.Schema({
     name: {
         type: String,
@@ -33,31 +33,12 @@ const userSchema = mongoose.Schema({
         required: [true, "Please fill in a photo"], //validate that they have entered a value 
         default: "https://static.xx.fbcdn.net/assets/?revision=816167972411634&name=desktop-workplace-your-profile-icon&density=1"
     },
-    phone: {
-        type: String,
-        default: "+353"
-    }
+  
 
 }, {
     timestamps: true
 });
 
-//Encrypt the password before it is entered in the database
-userSchema.pre("save", async function(next){
-    
-    //check if the password is modified to make sure it doesnt get double encrypted and to exit the function
-    if(!this.isModified("password")){
-        return next()
-    }
 
-    //Hash the password 
-    const hash = await bcrypt.genSalt(10) 
-    //hash this password in the schema
-    const hashedPassword = await bcrypt.hash(this.password, hash)
-    this.password = hashedPassword
-    //exit the function
-    next()
-
-})
-
+//export the scheama
 export default  mongoose.model("User", userSchema)

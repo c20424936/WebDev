@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route} from "react-router-dom";
+import { BrowserRouter, Routes, Route , } from "react-router-dom";
 
 import Home from './pages/Home'
 import AllBooks from './pages/AllBooks';
@@ -8,17 +8,21 @@ import Login from './pages/login';
 import NewBooks from './pages/Newbooks';
 import Register from './pages/Register';
 
+
 import UserList from "./pages/UserList";
 import AddUser from "./pages/AddUser";
 import EditUser from "./pages/EditUser";
 import AddBook from "./pages/AddBook";
 import BookList from "./pages/BookList";
 import EditBook from "./pages/EditBook";
- 
+
+
 
 export default function App() {
+  
   return (
     <BrowserRouter>
+    
       <Routes>
         <Route>
           <Route index element={<Home />} /> {/* Main Page */}
@@ -37,6 +41,10 @@ export default function App() {
 
         </Route>
       </Routes>
+      
+          
+
+      
     </BrowserRouter>
   );
 }

@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
 import Header from "../components/header";
 import Sidenav from "../components/sidebar";
+import { Navigate } from "react-router-dom";
  
  
  const UserList = () => {
@@ -15,7 +16,7 @@ import Sidenav from "../components/sidebar";
  
   const getUsers = async () => {
     const response = await axios.get("http://localhost:5000/users");
-    setUser(response.data);
+    setUser(response.data); 
   };
  
   const deleteUser = async (id) => {
@@ -26,6 +27,7 @@ import Sidenav from "../components/sidebar";
       console.log(error);
     }
   };
+  
  
   return (
     <>
@@ -68,6 +70,8 @@ import Sidenav from "../components/sidebar";
                   >
                     Edit
                   </Link>
+                  
+                  
                   <button
                     onClick={() => deleteUser(user._id)}
                     className="button is-danger is-small"
@@ -87,5 +91,6 @@ import Sidenav from "../components/sidebar";
     </>
   );
 };
+
  
 export default UserList;
