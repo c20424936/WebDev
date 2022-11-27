@@ -3,8 +3,6 @@ import Footer from '../components/Footer';
 import Header from '../components/header';
 import Sidenav from '../components/sidebar';
 import { Link } from "react-router-dom";
-import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
@@ -81,6 +79,7 @@ const users = [{ email: "admin@gmail.com", pass: "admin12" }];
             </div>
           </div>
         </form>
+        <br/>
         <Link to="/Register" className="newbtn">
           Register
         </Link>
